@@ -88,7 +88,7 @@ func New(username, password string) (*Chatwork, error) {
 }
 
 func cmd(cmd string) string {
-	return "https://www.chatwork.com/gateway.php?_v=2.52&_av=4&cmd=" + cmd
+	return "https://kcw.kddi.ne.jp/gateway.php?_v=2.52&_av=4&cmd=" + cmd
 }
 
 func (cw *Chatwork) Rooms() map[string]*Room {

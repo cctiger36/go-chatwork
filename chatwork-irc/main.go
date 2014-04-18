@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"flag"
 	"fmt"
-	"github.com/typester/go-chatwork"
+	"github.com/gussan/go-chatwork"
 	"log"
 	"net"
 	"strconv"
