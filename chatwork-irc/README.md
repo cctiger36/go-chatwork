@@ -5,7 +5,7 @@ IRC Gateway for ChatWork.
 ## Install/Upgrade
 
 ```
-go get -u github.com/typester/go-chatwork/chatwork-irc
+go get -u github.com/gussan/go-chatwork/chatwork-irc
 ```
 
 ## Run
