@@ -160,7 +160,7 @@ func Handle(conn net.Conn) {
 						msgs := strings.Split(chat.Message, "\n")
 
 						for j := range msgs {
-							fmt.Fprintf(conn, ":%s PRIVMSG #%s :%s\n", n, c, msgs[j])
+							fmt.Fprintf(conn, ":%s PRIVMSG #%s :%s\r\n", n, c, msgs[j])
 						}
 					}
 				}
