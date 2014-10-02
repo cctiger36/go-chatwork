@@ -157,11 +157,8 @@ func Handle(conn net.Conn) {
 						fmt.Println(chat)
 						n := fixch(chat.Person.Name)
 						c := fixch(chat.Room.Name)
-						msgs := strings.Split(chat.Message, "\n")
-
-						for j := range msgs {
-							fmt.Fprintf(conn, ":%s PRIVMSG #%s :%s\r\n", n, c, msgs[j])
-						}
+						msg := chat.Message
+						fmt.Fprintf(conn, ":%s PRIVMSG #%s :%s\r\n", n, c, msg)
 					}
 				}
 			}()
