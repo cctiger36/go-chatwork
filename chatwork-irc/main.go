@@ -157,7 +157,7 @@ func Handle(conn net.Conn) {
 						fmt.Println(chat)
 						n := fixch(chat.Person.Name)
 						c := fixch(chat.Room.Name)
-						msg := chat.Message
+						msg := strings.Replace(chat.Message, "\n", "\\n", -1)
 						fmt.Fprintf(conn, ":%s PRIVMSG #%s :%s\r\n", n, c, msg)
 					}
 				}
